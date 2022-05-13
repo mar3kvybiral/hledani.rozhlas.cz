@@ -4,7 +4,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
 		<meta http-equiv="cleartype" content="on">
-		<link rel="shortcut icon" href="https://portal.rozhlas.cz/sites/default/files/favicon_portal.ico" type="image/vnd.microsoft.icon"/>
+		<link rel="shortcut icon" href="https://www.rozhlas.cz/sites/default/files/favicon_portal.ico" type="image/vnd.microsoft.icon"/>
 		<meta name="MobileOptimized" content="width">
 		<link rel="profile" href="http://www.w3.org/1999/xhtml/vocab">
 		<link rel="apple-touch-icon-precomposed" href="https://www.rozhlas.cz/sites/all/themes/custom/e7/apple-touch-icon-precomposed-72x72.png" sizes="72x72">
@@ -372,17 +372,7 @@
 											<div class="form__widget form__widget--selects">
 
 												<!-- sort -->
-												<div class="form-item form-type-select custom-select">
-													<label class="form-label">Řadit dle</label>
-													<select class="form-select">
-														<option>podle relevance</option>
-														<option>on nejnovějšího</option>
-														<option>od nejstaršího</option>
-													</select>
-												</div>
-
-												<!-- sort -->
-												<div class="form-item form-type-select custom-select">
+												<div class="form-item form-type-select form-type-select--theme custom-select">
 													<label class="form-label">Podle téma</label>
 													<select class="form-select">
 														<option>všechna témata</option>
@@ -400,7 +390,7 @@
 												</div>
 
 												<!-- sort -->
-												<div class="form-item form-type-select custom-select custom-select-with-search">
+												<div class="form-item form-type-select form-type-select--show custom-select custom-select-with-search">
 													<label class="form-label">Podle pořadu</label>
 													<select class="form-select">
 														<option>všechny pořady (615 pořadů)</option>
@@ -1022,6 +1012,17 @@
 													</select>
 												</div>
 
+												<!-- sort -->
+												<div class="form-item form-type-select form-type-select--author custom-select custom-select-with-search">
+													<label class="form-label">Podle autora</label>
+													<select class="form-select">
+														<option>všichni autoři</option>
+														<option>Zuzana Fuksová</option>
+														<option>Aleš Stuchlý</option>
+														<option>Ivana Veselková</option>
+													</select>
+												</div>
+
 											</div>
 
 											<!-- dates -->
@@ -1094,11 +1095,11 @@
 												</a>
 											</h3>
 
-											<a href="https://vltava.rozhlas.cz/danbarta">
+											<!--<a href="https://vltava.rozhlas.cz/danbarta">-->
 												<p>
 													Dan Bárta jako zapisovatel a předčítač. To je vltavský podcast Nevinnosti světa. V deseti půlhodinkách Bárta vypráví o cestování, o focení vážek, o světě a o tom, co v něm viděl a cítil. Jak mu skoro explodovala páteř při konzumaci jakéhosi indického povzbuzováku, jak v Africe shodou náhod vytvořil potenciální chlapecké fotbalové mužstvo, jak uplácel mexického taxikáře vším, co v kapse našel. To všechno s nadhledem a poezií.
 												</p>
-											</a>
+											<!--</a>-->
 
 											<div class="caption caption--public-from">
 												<span class="caption__icon">
@@ -1176,12 +1177,42 @@
 							</section>
 							<!-- b-068 - end -->
 
+							<!-- results-heading - begin -->
+							<div class="box results-heading">
+								<div class="results-heading__stats">
+									Nalezeno <strong>8968</strong> výsledků
+								</div>
+								<div class="results-heading__sort">
+									<!-- form - begin -->
+									<div class="view-filters view-filters--sort">
+										<form class="view-searchbar-form" action="https://hledani.rozhlas.cz/" method="get" accept-charset="UTF-8">
+											<div class="views-exposed-form">
+												<div class="views-exposed-widgets views-exposed-widgets">
+
+													<!-- selects -->
+													<div class="form__widget form__widget--selects">
+
+														<!-- sort -->
+														<div class="form-item form-type-select form-type-select--sort custom-select">
+															<label class="form-label">Řadit dle</label>
+															<select class="form-select">
+																<option>podle relevance</option>
+																<option>on nejnovějšího</option>
+																<option>od nejstaršího</option>
+															</select>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<!-- results-heading - end -->
+
 							<!-- b-022c - begin -->
 							<section class="box b-022 b-022c">
-
-								<div class="b-022c__title">
-									Nalezeno <span class="b-022c__title-results">8968</span> výsledků
-								</div>
 
 								<ul class="b-022__list b-022c__list">
 
